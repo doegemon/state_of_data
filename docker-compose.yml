@@ -1,7 +1,8 @@
 version: "3.8"
 services:
   dcs-postgres:
-    image: postgres:15.3-alpine
+    image: postgres:latest
+    platform: linux/x86_64
     container_name: dcs-postgres
     restart: always
     environment:
