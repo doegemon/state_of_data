@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: state_of_data
+    database: state_of_data_db
+    schema: bronze
+    tables:
+      - name: sheets_state_of_data
+        description: "This dataset contains data from the 2024-2025 State of Data survey conducted in Brazil by the Data Hackers Community, and it's provided via a .csv file hosted in a Google Sheets."
