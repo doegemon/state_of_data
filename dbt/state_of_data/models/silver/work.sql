@@ -1,7 +1,7 @@
 {{ config(materialized = 'table', alias = 'work') }}
 
 SELECT DISTINCT
-    	_0_a_token AS survey_id,
+    _0_a_token AS survey_id,
 	to_timestamp(_0_d_data_hora_envio, 'DD/MM/YYYY HH24:MI:SS') AS dt_submitted,
 	coalesce(_2_a_situacao_de_trabalho, 'No answer') AS work_situation,
 	coalesce(_2_b_setor, 'No answer') AS company_area,
